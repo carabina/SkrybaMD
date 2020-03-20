@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14593B124252E0E0073DC48 /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14593B024252E0E0073DC48 /* GeneratorTests.swift */; };
 		B1FAE47023F85A4600D6F5A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FAE46F23F85A4600D6F5A2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +24,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B14593AE24252E0E0073DC48 /* SkrybaMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkrybaMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14593B024252E0E0073DC48 /* GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
+		B14593B224252E0E0073DC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1FAE46C23F85A4600D6F5A2 /* MDDocGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MDDocGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FAE46F23F85A4600D6F5A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B14593AB24252E0E0073DC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1FAE46923F85A4600D6F5A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B14593AF24252E0E0073DC48 /* SkrybaMDTests */ = {
+			isa = PBXGroup;
+			children = (
+				B14593B024252E0E0073DC48 /* GeneratorTests.swift */,
+				B14593B224252E0E0073DC48 /* Info.plist */,
+			);
+			path = SkrybaMDTests;
+			sourceTree = "<group>";
+		};
 		B1FAE46323F85A4500D6F5A2 = {
 			isa = PBXGroup;
 			children = (
 				B1FAE46E23F85A4600D6F5A2 /* MDDocGen */,
+				B14593AF24252E0E0073DC48 /* SkrybaMDTests */,
 				B1FAE46D23F85A4600D6F5A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B1FAE46C23F85A4600D6F5A2 /* MDDocGen */,
+				B14593AE24252E0E0073DC48 /* SkrybaMDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B14593AD24252E0E0073DC48 /* SkrybaMDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14593B524252E0E0073DC48 /* Build configuration list for PBXNativeTarget "SkrybaMDTests" */;
+			buildPhases = (
+				B14593AA24252E0E0073DC48 /* Sources */,
+				B14593AB24252E0E0073DC48 /* Frameworks */,
+				B14593AC24252E0E0073DC48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkrybaMDTests;
+			productName = SkrybaMDTests;
+			productReference = B14593AE24252E0E0073DC48 /* SkrybaMDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B1FAE46B23F85A4600D6F5A2 /* MDDocGen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1FAE47323F85A4600D6F5A2 /* Build configuration list for PBXNativeTarget "MDDocGen" */;
@@ -88,10 +127,13 @@
 		B1FAE46423F85A4500D6F5A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Robert Herdzik";
 				TargetAttributes = {
+					B14593AD24252E0E0073DC48 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					B1FAE46B23F85A4600D6F5A2 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -111,11 +153,30 @@
 			projectRoot = "";
 			targets = (
 				B1FAE46B23F85A4600D6F5A2 /* MDDocGen */,
+				B14593AD24252E0E0073DC48 /* SkrybaMDTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B14593AC24252E0E0073DC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B14593AA24252E0E0073DC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14593B124252E0E0073DC48 /* GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1FAE46823F85A4600D6F5A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +188,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B14593B324252E0E0073DC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SkrybaMDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = x.SkrybaMDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B14593B424252E0E0073DC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SkrybaMDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = x.SkrybaMDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B1FAE47123F85A4600D6F5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -263,6 +359,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B14593B524252E0E0073DC48 /* Build configuration list for PBXNativeTarget "SkrybaMDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14593B324252E0E0073DC48 /* Debug */,
+				B14593B424252E0E0073DC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B1FAE46723F85A4500D6F5A2 /* Build configuration list for PBXProject "MDDocGen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
